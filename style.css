@@ -16,9 +16,18 @@ body.collection{
 section.homepage{
     background: url(backdrop.jpg);
     animation: fadein Linear 1s;
-    position: fixed;
     background-repeat: no-repeat;
     background-size:cover;
+    height: 100%;
+    width: 100%;
+    color:white;
+    
+}
+section.projectpage{
+    background: url(backdrop.jpg);
+    animation: fadein Linear 1s;
+    background-repeat: no-repeat;
+    background-size:contain;
     height: 100%;
     width: 100%;
     color:white;
