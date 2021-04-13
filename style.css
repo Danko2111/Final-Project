@@ -1,0 +1,114 @@
+body{
+    margin:0;
+    width:100%;
+    height:100vh;
+    background-color: rgb(31, 31, 31);
+
+}
+
+section.homepage{
+    background: url(backdrop.jpg);
+    animation: fadein Linear 1s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    width: 100%;
+    color:white;
+    
+}
+
+div.logo{
+    color: rgb(223, 178, 178);
+    font-size: 200%;
+    padding-left: 4%;
+    padding-top: 2%;
+    font-family: trumpgothic;
+}
+
+div.title{    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex:1;
+    padding-left: 10%;
+    padding-top: 3%;
+    font-size:400%;
+    font-family: trumpgothic;
+    
+}
+
+hr.solid{
+    margin-left:10%;
+    background-color: rgb(155, 12, 12);
+    border:3px solid  rgb(155, 12, 12);
+    width: 100px;
+
+}
+
+div.title-desc{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex:1;
+    margin-top: 2%;
+    padding-left: 10%;
+    font-size: 100%;
+    font-family:polt;
+}
+
+
+div.start{
+    background-color: rgb(155, 12, 12);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 220px;
+    margin-left: 10%;
+    font-size:150%;
+    font-family:polt;
+    
+}
+
+div.start:hover{
+    background-color: rgb(105, 9, 9);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 220px;
+    margin-left: 10%;
+    font-size:150%;
+    font-family:polt;
+}
+
+
+
+/*USED THIS AREA FOR IRREGULAR CSS CHANGES*/
+
+@font-face{
+    font-family:polt;
+    src: url(Polt-Regular.otf);
+}
+
+@font-face{
+    font-family:trumpgothic;
+    src: url(trump_gothic_east_bold.ttf);
+}
+
+@keyframes fadein {
+    from {opacity: 0; }
+    to   {opacity:1; }
+}
+
+
+@-moz-keyframes fadein {
+    from {opacity: 0;}
+    to   {opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to   {opacity: 1; }
+}
