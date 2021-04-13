@@ -1,7 +1,14 @@
-body{
+body.homepage{
     margin:0;
     width:100%;
     height:100vh;
+    background-color: rgb(31, 31, 31);
+
+}
+body.collection{
+    margin:0;
+    width:100%;
+    height:5000px;
     background-color: rgb(31, 31, 31);
 
 }
@@ -9,7 +16,7 @@ body{
 section.homepage{
     background: url(backdrop.jpg);
     animation: fadein Linear 1s;
-    background-position: center;
+    position: fixed;
     background-repeat: no-repeat;
     background-size:cover;
     height: 100%;
@@ -20,8 +27,9 @@ section.homepage{
 
 div.logo{
     color: rgb(223, 178, 178);
+    width:fit-content;
     font-size: 200%;
-    padding-left: 4%;
+    padding-left: 50px;
     padding-top: 2%;
     font-family: trumpgothic;
 }
@@ -38,7 +46,7 @@ div.title{
     
 }
 
-hr.solid{
+hr.main{
     margin-left:10%;
     background-color: rgb(155, 12, 12);
     border:3px solid  rgb(155, 12, 12);
@@ -73,6 +81,7 @@ div.start{
 
 div.start:hover{
     background-color: rgb(105, 9, 9);
+    transition:ease-in 0.1s;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
@@ -81,6 +90,55 @@ div.start:hover{
     margin-left: 10%;
     font-size:150%;
     font-family:polt;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div.nav{
+    padding-left:10px ;
+    font-family: trumpgothic;
+    font-size: 200%;
+}
+
+div.nav ul{
+    list-style-type:none;
+}
+div.nav ul li{
+    width:fit-content;
+}
+div.nav ul li:hover{
+    color: rgb(223, 178, 178);
+    transition:ease-in 0.1s;
+}
+
+div.title2 h1{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    font-family: trumpgothic;
+    font-size:600%;
+    margin-bottom:0px;
+}
+
+div.title2 hr{
+    background-color: rgb(155, 12, 12);
+    border:3px solid  rgb(155, 12, 12);
+    width: 30%;
+    margin-top: 0px;
+}
+
+div.projectlinks{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex:1;
+}
+
+div.links{
+    
 }
 
 
