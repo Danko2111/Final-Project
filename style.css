@@ -1,14 +1,14 @@
 body.homepage{
-    margin:0;
+    margin:0px;
     width:100%;
     height:100vh;
     background-color: rgb(31, 31, 31);
 
 }
 body.collection{
-    margin:0;
+    margin:0px;
     width:100%;
-    height:5000px;
+    height:100%;
     background-color: rgb(31, 31, 31);
 
 }
@@ -27,7 +27,7 @@ section.projectpage{
     background: url(backdrop.jpg);
     animation: fadein Linear 1s;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
     height: 100%;
     width: 100%;
     color:white;
@@ -44,10 +44,6 @@ div.logo{
 }
 
 div.title{    
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex:1;
     padding-left: 10%;
     padding-top: 3%;
     font-size:400%;
@@ -64,10 +60,6 @@ hr.main{
 }
 
 div.title-desc{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex:1;
     margin-top: 2%;
     padding-left: 10%;
     font-size: 100%;
@@ -75,7 +67,7 @@ div.title-desc{
 }
 
 
-div.start{
+div.start a{
     background-color: rgb(155, 12, 12);
     padding-left: 30px;
     padding-right: 30px;
@@ -84,11 +76,16 @@ div.start{
     width: 220px;
     margin-left: 10%;
     font-size:150%;
+    border: 2px solid rgb(155, 12, 12);
+    display: inline-block;
+    text-align: center;
     font-family:polt;
+    text-decoration: none;
+    color: inherit;
     
 }
 
-div.start:hover{
+div.start a:hover{
     background-color: rgb(105, 9, 9);
     transition:ease-in 0.1s;
     padding-left: 30px;
@@ -98,18 +95,26 @@ div.start:hover{
     width: 220px;
     margin-left: 10%;
     font-size:150%;
+    border: 2px solid rgb(105, 9, 9);
+    display: inline-block;
+    text-align: center;
     font-family:polt;
-}
-
-a {
     text-decoration: none;
     color: inherit;
 }
 
+
 div.nav{
+    width: fit-content;
     padding-left:10px ;
     font-family: trumpgothic;
     font-size: 200%;
+    
+}
+
+div.nav a{
+    text-decoration: none;
+    color: inherit;
 }
 
 div.nav ul{
@@ -125,11 +130,11 @@ div.nav ul li:hover{
 
 div.title2 h1{
     width: 100%;
-    height: max-content;
     text-align: center;
     font-family: trumpgothic;
     font-size:600%;
     margin-bottom:0px;
+
 }
 
 div.title2 hr{
@@ -137,17 +142,27 @@ div.title2 hr{
     border:3px solid  rgb(155, 12, 12);
     width: 30%;
     margin-top: 0px;
+    margin-bottom: 80px;
 }
+
 
 div.projectlinks{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex:1;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+    margin-top: 100px;
+    font-family: trumpgothic;
+    text-align: center;
+    justify-content: space-evenly;
+    
 }
 
-div.links{
-    
+div.projectlinks img{
+    height: 250px;
+    width: 250px;
+    padding-bottom: 50px;
+
 }
 
 
