@@ -1,196 +1,202 @@
-body.homepage{
-    margin:0px;
-    width:100%;
-    height:100vh;
-    background-color: rgb(31, 31, 31);
-
+body.homepage {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(31, 31, 31);
 }
-body.collection{
-    margin:0px;
-    width:100%;
-    height:100%;
-    background-color: rgb(31, 31, 31);
-
+body.collection {
+  margin: 0;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
 }
 
-section.homepage{
-    background: url(backdrop.jpg);
-    animation: fadein Linear 1s;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 100%;
-    width: 100%;
-    color:white;
-    
+section.homepage {
+  background: url(backdrop.jpg);
+  animation: fadein Linear 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  color: white;
 }
-section.projectpage{
-    background: url(backdrop.jpg);
-    animation: fadein Linear 1s;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 100%;
-    width: 100%;
-    color:white;
-    
+section.projectpage {
+  background: url(backdrop.jpg);
+  animation: fadein Linear 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: white;
 }
 
-div.logo{
-    color: rgb(223, 178, 178);
-    width:fit-content;
-    font-size: 200%;
-    padding-left: 50px;
-    padding-top: 2%;
-    font-family: trumpgothic;
+div.logo p {
+  color: rgb(223, 178, 178);
+  width: fit-content;
+  font-size: 200%;
+  padding-left: 3%;
+  padding-top: 2%;
+  margin: 0;
+  font-family: trumpgothic;
+  user-select: none;
+
+  transition: all 0.2s ease;
+  transform-origin: center;
 }
 
-div.title{    
-    padding-left: 10%;
-    padding-top: 3%;
-    font-size:400%;
-    font-family: trumpgothic;
-    
+div.logo p:hover {
+  transform: scale(1.05) rotate(-2deg);
+  color: rgb(155, 12, 12);
 }
 
-hr.main{
-    margin-left:10%;
-    background-color: rgb(155, 12, 12);
-    border:3px solid  rgb(155, 12, 12);
-    width: 100px;
-
+div.title {
+  padding-left: 10%;
+  padding-top: 3%;
+  font-size: 400%;
+  font-family: trumpgothic;
 }
 
-div.title-desc{
-    margin-top: 2%;
-    padding-left: 10%;
-    font-size: 100%;
-    font-family:polt;
+hr.main {
+  margin-left: 10%;
+  background-color: rgb(155, 12, 12);
+  border: 3px solid rgb(155, 12, 12);
+  width: 100px;
 }
 
-
-div.start a{
-    background-color: rgb(155, 12, 12);
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 220px;
-    margin-left: 10%;
-    font-size:150%;
-    border: 2px solid rgb(155, 12, 12);
-    display: inline-block;
-    text-align: center;
-    font-family:polt;
-    text-decoration: none;
-    color: inherit;
-    
+div.title-desc p {
+  margin-top: 2%;
+  padding-left: 10%;
+  font-size: 150%;
+  font-family: polt;
 }
 
-div.start a:hover{
-    background-color: rgb(105, 9, 9);
-    transition:ease-in 0.1s;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 220px;
-    margin-left: 10%;
-    font-size:150%;
-    border: 2px solid rgb(105, 9, 9);
-    display: inline-block;
-    text-align: center;
-    font-family:polt;
-    text-decoration: none;
-    color: inherit;
+div.start a {
+  background-color: rgb(155, 12, 12);
+  padding: 20px 30px;
+  width: 220px;
+  margin-left: 10%;
+  font-size: 1.5rem;
+  border: 2px solid rgb(116, 10, 10);
+  display: inline-block;
+  text-align: center;
+  font-family: polt;
+  text-decoration: none;
+  color: white;
+
+  transition: 0.3s ease;
 }
 
-
-div.nav{
-    width: fit-content;
-    padding-left:10px ;
-    font-family: trumpgothic;
-    font-size: 200%;
-    
+div.start a:hover {
+  background-color: rgb(105, 9, 9);
+  border: 2px solid rgb(56, 4, 4);
 }
 
-div.nav a{
-    text-decoration: none;
-    color: inherit;
+div.nav {
+  width: fit-content;
+  padding-left: 10px;
+  margin-right: 0;
+  font-family: trumpgothic;
+  font-size: 200%;
 }
 
-div.nav ul{
-    list-style-type:none;
-}
-div.nav ul li{
-    width:fit-content;
-}
-div.nav ul li:hover{
-    color: rgb(223, 178, 178);
-    transition:ease-in 0.1s;
+div.nav a {
+  text-decoration: none;
+  color: inherit;
 }
 
-div.title2 h1{
-    width: 100%;
-    text-align: center;
-    font-family: trumpgothic;
-    font-size:600%;
-    margin-bottom:0px;
-
+div.nav ul {
+  list-style-type: none;
+}
+div.nav li {
+  width: fit-content;
+}
+div.nav li:hover {
+  color: rgb(223, 178, 178);
+  transition: ease-in 0.1s;
 }
 
-div.title2 hr{
-    background-color: rgb(155, 12, 12);
-    border:3px solid  rgb(155, 12, 12);
-    width: 30%;
-    margin-top: 0px;
-    margin-bottom: 80px;
+div.title2 h1 {
+  width: 100%;
+  text-align: center;
+  font-family: trumpgothic;
+  font-size: 600%;
+  margin-bottom: 0px;
 }
 
-
-div.projectlinks{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    width: 100%;
-    margin-top: 100px;
-    font-family: trumpgothic;
-    text-align: center;
-    justify-content: space-evenly;
-    
+div.title2 hr {
+  background-color: rgb(155, 12, 12);
+  border: 3px solid rgb(155, 12, 12);
+  width: 30%;
+  margin-top: 0px;
+  margin-bottom: 80px;
 }
 
-div.projectlinks img{
-    height: 250px;
-    width: 250px;
-    padding-bottom: 50px;
-
+div.projectlinks {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding-bottom: 150px;
+  font-family: trumpgothic;
+  text-align: center;
 }
 
+div.link {
+  flex: 1 0 33.33%;
+  justify-content: space-around;
+  margin-top: 100px;
+  min-width: 400px;
+}
 
+div.projectlinks img {
+  height: 250px;
+  width: 250px;
+  border-radius: 25%;
+  opacity: 0.6;
+
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+div.projectlinks img:hover {
+  height: 250px;
+  width: 250px;
+  border-radius: 25%;
+  opacity: 1;
+  transform: scale(1.05);
+}
 
 /*USED THIS AREA FOR IRREGULAR CSS CHANGES*/
 
-@font-face{
-    font-family:polt;
-    src: url(Polt-Regular.otf);
+@font-face {
+  font-family: polt;
+  src: url(Polt-Regular.otf);
 }
 
-@font-face{
-    font-family:trumpgothic;
-    src: url(trump_gothic_east_bold.ttf);
+@font-face {
+  font-family: trumpgothic;
+  src: url(trump_gothic_east_bold.ttf);
 }
 
 @keyframes fadein {
-    from {opacity: 0; }
-    to   {opacity:1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-
 @-moz-keyframes fadein {
-    from {opacity: 0;}
-    to   {opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadein {
-    from {opacity: 0;}
-    to   {opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
