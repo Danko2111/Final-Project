@@ -211,7 +211,7 @@ a.email {
   font-size: 500%;
   font-family: trumpgothic;
 
-  margin: 25px 50px;
+  margin: 25px auto;
   min-width: none;
 
   transition: transform 0.5s ease, color 0.5s ease;
