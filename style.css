@@ -78,7 +78,7 @@ hr.main {
   width: 100px;
 
   transform-origin: left;
-  animation: 1s ease-out 0.3s 1 expandFromCenter;
+  animation: 1s ease-out 0.3 s 1 expandFromCenter;
 }
 
 div.title-desc p {
@@ -107,7 +107,7 @@ div.start a {
 
 div.start a:hover {
   background-color: rgb(105, 9, 9);
-  border: 2px solid rgb(56, 4, 4);
+  border: 2px solid rgb(58, 5, 5);
 }
 
 div.nav {
@@ -155,7 +155,7 @@ div.title2 hr {
   flex: 1;
 
   background-color: rgb(155, 12, 12);
-  border: 1px solid rgb(155, 12, 12);
+  border: none;
   max-width: 25%;
   height: 3px;
   margin-top: 0px;
