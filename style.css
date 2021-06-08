@@ -78,7 +78,7 @@ hr.main {
   width: 100px;
 
   transform-origin: left;
-  animation: 1s ease-out 0s 1 expandFromCenter;
+  animation: 1s ease-out 0.3s 1 expandFromCenter;
 }
 
 div.title-desc p {
