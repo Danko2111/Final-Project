@@ -10,6 +10,18 @@ body.collection {
   background-color: rgb(31, 31, 31);
 }
 
+body.contact {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(31, 31, 31);
+
+  background: url(backdrop2.jpg);
+  animation: fadein Linear 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 section.homepage {
   background: url(backdrop.jpg);
   animation: fadein Linear 1s;
@@ -28,10 +40,16 @@ section.projectpage {
   color: white;
 }
 
+section.contact {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
 div.logo p {
   color: rgb(223, 178, 178);
   width: fit-content;
-  font-size: 200%;
+  font-size: 2em;
   padding-left: 3%;
   padding-top: 2%;
   margin: 0;
@@ -56,14 +74,17 @@ div.title {
 
 hr.main {
   margin-left: 10%;
-  background-color: rgb(155, 12, 12);
   border: 3px solid rgb(155, 12, 12);
   width: 100px;
+
+  transform-origin: left;
+  animation: 1s ease-out 0s 1 expandFromCenter;
 }
 
 div.title-desc p {
   margin-top: 2%;
   padding-left: 10%;
+  padding-right: 10%;
   font-size: 150%;
   font-family: polt;
 }
@@ -91,8 +112,8 @@ div.start a:hover {
 
 div.nav {
   width: fit-content;
-  padding-left: 10px;
-  margin-right: 0;
+  padding-left: 3%;
+  padding-top: 2%;
   font-family: trumpgothic;
   font-size: 200%;
 }
@@ -104,8 +125,11 @@ div.nav a {
 
 div.nav ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 div.nav li {
+  padding: 10px 0;
   width: fit-content;
 }
 div.nav li:hover {
@@ -113,20 +137,30 @@ div.nav li:hover {
   transition: ease-in 0.1s;
 }
 
+div.title2 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 div.title2 h1 {
-  width: 100%;
+  flex: 1 1 100%;
+
   text-align: center;
   font-family: trumpgothic;
-  font-size: 600%;
-  margin-bottom: 0px;
+  font-size: 6em;
+  margin: 0 50px;
 }
 
 div.title2 hr {
+  flex: 1;
+
   background-color: rgb(155, 12, 12);
-  border: 3px solid rgb(155, 12, 12);
-  width: 30%;
+  border: 1px solid rgb(155, 12, 12);
+  max-width: 25%;
+  height: 3px;
   margin-top: 0px;
-  margin-bottom: 80px;
+
+  animation: 1s ease-out 0s 1 expandFromCenter;
 }
 
 div.projectlinks {
@@ -160,6 +194,32 @@ div.projectlinks img:hover {
   border-radius: 25%;
   opacity: 1;
   transform: scale(1.05);
+}
+
+div.email {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+}
+
+a.email {
+  flex-shrink: 1;
+  text-decoration: none;
+  color: white;
+  font-size: 500%;
+  font-family: trumpgothic;
+
+  margin: 25px 50px;
+  min-width: none;
+
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+a.email:hover {
+  transform: scale(1.02);
+  color: rgb(223, 178, 178);
 }
 
 /*USED THIS AREA FOR IRREGULAR CSS CHANGES*/
@@ -198,5 +258,23 @@ div.projectlinks img:hover {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes expandFromCenter {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes textcolor {
+  from {
+    color: white;
+  }
+  to {
+    color: rgb(223, 178, 178);
   }
 }
